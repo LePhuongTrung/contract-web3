@@ -5,8 +5,11 @@
   "scripts": {
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
+    "deploy:demo": "npx hardhat ignition deploy ignition/modules/DeployDemo.ts --network localhost",
+    "test:demo": "npx hardhat run scripts/interact.ts --network localhost",
     "deploy:testnet": "npx hardhat run scripts/deploy.ts --network bscTestnet",
     "deploy:mainnet": "npx hardhat run scripts/deploy.ts --network bscMainnet",
+    "node": "npx hardhat node",
     "clean": "npx hardhat clean"
   },
   "keywords": [],
