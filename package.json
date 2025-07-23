@@ -1,0 +1,29 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy:testnet": "npx hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.ts --network bscMainnet",
+    "clean": "npx hardhat clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^24.1.0",
+    "dotenv": "^17.2.0",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.25.0",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.8.3"
+  }
+}
