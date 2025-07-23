@@ -46,7 +46,7 @@ This project leverages **Hardhat**, a professional Ethereum development environm
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/LePhuongTrung/contract-web3.git
     cd contract-web3
     ```
 2.  **Install dependencies:**
@@ -63,14 +63,11 @@ This project leverages **Hardhat**, a professional Ethereum development environm
 
     ```
     PRIVATE_KEY=<Enter your private key here>
-    ETHERSCAN_API_KEY=<Enter your Etherscan/BscScan API key here>
-    BSC_TESTNET_URL=[https://data-seed-prebsc-1-s1.binance.org:8545](https://data-seed-prebsc-1-s1.binance.org:8545)
-    BSC_MAINNET_URL=[https://bsc-dataseed.binance.org/](https://bsc-dataseed.binance.org/)
+    ETHERSCAN_API_KEY=<Enter your Etherscan API key here>
     ```
 
     * `PRIVATE_KEY`: The private key of the account you'll use for deployment (needs sufficient BNB for gas fees). **NEVER SHARE THIS!**
-    * `ETHERSCAN_API_KEY`: Your API key from BscScan for contract verification (register at [bscscan.com/myapikey](https://bscscan.com/myapikey)). Hardhat typically uses this variable name for both Etherscan and BscScan.
-    * `BSC_TESTNET_URL` / `BSC_MAINNET_URL`: RPC URLs for the BSC network. You can use the default URLs or replace them with other nodes.
+    * `ETHERSCAN_API_KEY`: Your API key from Etherscan for contract verification (register at [https://etherscan.io/apidashboard](https://etherscan.io/apidashboard)). Hardhat typically uses this variable name for both Etherscan.
 
 2.  **Configure `hardhat.config.ts`:**
     Ensure your `hardhat.config.ts` is correctly set up for BSC Testnet/Mainnet networks and connects to your `.env` variables.
