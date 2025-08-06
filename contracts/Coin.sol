@@ -36,10 +36,6 @@ contract MyPureERC20Token {
     owner = newOwner;
   }
 
-  function decimals() public view returns (uint8) {
-    return decimals;
-  }
-
   function transfer(address _to, uint256 _value) public returns (bool) {
     require(_to != address(0), 'ERC20: transfer to the zero address');
     require(balanceOf[msg.sender] >= _value, 'ERC20: transfer amount exceeds balance');
@@ -85,17 +81,5 @@ contract MyPureERC20Token {
     require(currentAllowance >= _subtractedValue, 'ERC20: decreased allowance below zero');
     approve(_spender, currentAllowance - _subtractedValue);
     return true;
-  }
-
-  function totalSupply() public view returns (uint256) {
-    return totalSupply;
-  }
-
-  function balanceOf(address _owner) public view returns (uint256) {
-    return balanceOf[_owner];
-  }
-
-  function allowance(address _owner, address _spender) public view returns (uint256) {
-    return allowance[_owner][_spender];
   }
 }
